@@ -4,7 +4,7 @@ Python3 script that creates a weather status and forecast which can be printed o
 I tested it on the "Celectronic D10".
 Usage to show in shell:
 ```shell
-python3 weather.py
+python3 weather.py Germany/Karlsruhe
 
 ----------------------
    Wetterbericht für
@@ -37,7 +37,7 @@ python3 weather.py
 
 
 ```
-Create a script that outputs weather that can be printed on the Celectronic D10 thermal printer
+
 
 ## Setup 
 You have to get an API key from wunderground.com, which is actually free (with certain restrictions).
