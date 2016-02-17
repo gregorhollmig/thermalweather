@@ -29,6 +29,8 @@ def printwind (icon):
 			prettyprint (line)	
 	return
 
+## Borrowed from https://github.com/schachmat/wego/blob/master/we.go
+
 questionmark = [
 		"    .-.      ",
 		"     __)     ",
