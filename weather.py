@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 #coding: utf8
+import sys
 from util import * 
 from weathericons import *
 
-key = "YOURKEY"
+key = "e6aa0bba54460efe"
 place = "Germany/Karlsruhe"
+if(len(sys.argv)>1):
+	place = sys.argv[1]
 
 weathercondition = jsonwunderground(place, key, "conditions");
 #Parse CONTENT from JSON

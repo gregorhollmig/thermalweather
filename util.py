@@ -2,8 +2,18 @@ import urllib.request
 import json
 
 def prettyprint(text):
-	spaces = " " * int((24-len(text))/2) 
-	print (spaces+text)
+	if(len(text)>24):
+		if " " in text:
+			parts = text.split(' ', 1)
+			prettyprint(parts[0])
+			prettyprint(parts[1])
+		else:
+			prettyprint(text[:24])
+			prettyprint(text[24:])
+			
+	else:
+		spaces = " " * int((24-len(text))/2) 
+		print (spaces+text)
 	return
 
 
